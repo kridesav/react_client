@@ -53,3 +53,9 @@
     background-color: #4CAF50;
     color: white;
   }
+
+  .QR-image {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #ccc;
+  }
