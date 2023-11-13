@@ -1,16 +1,13 @@
-import React from 'react'
-import './App.css'
-import LoginForm from './components/LoginForm';
+import './App.css';
+import { AuthProvider } from './components/AuthContext';
+import Dashboard from './components/Dashboard';
 
 function App() {
-
   return (
-    <>
-      <div>
-        <LoginForm />
-      </div>
-    </>
-  )
+    <AuthProvider>
+      <Dashboard />
+    </AuthProvider>
+  );
 }
 
-export default App
+export default App;
